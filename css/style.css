@@ -5,11 +5,12 @@
 }
 
 :root {
-    --tipo-letra: Arial, Helvetica, sans-serif;;
+    --tipo-letra: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
     --vermelho-escuro: #B60408;
     --vermelho-claro: #DB151A;
     --cinza: #2F3237;
     --cinza-claro: #5E646E;
+    --cinza-cinza: #e0dcdc;
     --cinza-medio: #292929;
     --cinza-escuro: #151515;
     --preto: #000000;
@@ -34,24 +35,35 @@ ul {
 img {
     max-width: 100%;
     display: block;
-
 }
 
-.menu {
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
     background-color: var(--cinza-medio);
 }
 
-.menu-fundo {
+.navbar-fundo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px 40px ;
+    padding: 10px 40px ;
+}
+
+.navbar-logo {
+    font-size: larger;
+    font-weight: bold;
+
 }
 
 .nav {
     display: flex;
 }
+
+
 
 .nav-lista {
     /* list-style: none; */
@@ -84,4 +96,76 @@ img {
     border-radius: 5px;
     border: none;
     
+}
+
+.cantor {
+    background-image: url(../images/coverty1.jpg);
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cantor-cover {
+    font-weight: bolder;
+    font-size: 25px;
+    padding-left: 260px;
+    padding-top: 250px;
+    
+}
+
+.cantor-btn {
+    font-weight: bolder;
+    font-size: 25px;
+    padding-right: 260px;
+    padding-top: 250px;
+} 
+
+.cantor-btn-shr {
+    background-color: var(--cinza-c);
+    color: var(--branco);
+    border-radius: 50%;
+    border: none;
+    padding: 20px;
+    font-weight: bolder;
+
+}
+
+.album-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.albuns {
+    margin: 0 auto;
+    max-width: 980px;
+    
+}
+
+.sec-titulo {
+    /* text-align: center; */
+    margin: 15px 0;
+
+}
+
+.card-album-img {
+    border-radius: 8px;
+}
+
+.card-album-body {
+    margin-top: 10px;
+}
+
+
+.card-album-title {
+    font-size:medium;
+}
+.card-album-ano {
+    color: var(--cinza-cinza);
 }
